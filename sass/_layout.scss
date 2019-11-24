@@ -1,0 +1,38 @@
+
+*, *::after *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-roboto;
+    position: relative;
+ }
+
+.nav {
+    position: fixed;
+}
+
+.nav--side {
+    width: 190px;
+    height: 100%;
+    background-color: $color-side-panel-background;
+    
+    img {
+        margin: 10px;
+    }
+}
+
+.nav--top {
+    height: 60px;
+    width: 100%;
+    left: 190px;
+}
+
+.content {
+    background-color: $color-content-background;
+    position: absolute;
+    top: 60px;
+    left: 190px;
+    width: calc(100vw - 190px);
+    height: calc(100vh - 60px);
+}

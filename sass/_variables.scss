@@ -1,8 +1,18 @@
 /* Colors */
 $color-side-panel-background: #191919;
+$color-content-background: #F2F2F2;
 
 /* Font Colors */
 
 /* Font Families */
+$font-family-roboto: 'Roboto', sans-serif;
+@font-face {
+    font-family: 'Glyphter';
+    src: url(../vendor/icon-font/fonts/Glyphter.eot);
+    src: 
+    url(../vendor/icon-font/fonts/Glyphter.woff)format('woff'),
+    url(../vendor/icon-font/fonts/Glyphter.ttf)format('truetype'),
+    url(../vendor/icon-font/fonts/Glyphter.svg)format('svg');
+}
 
 /* Font Sizes */
