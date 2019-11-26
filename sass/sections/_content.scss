@@ -1,0 +1,22 @@
+/* General */
+
+.content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: calc(100% - 190px);
+    transition: $transition-side-nav;
+    padding: 20px;
+}
+
+.--hamburger-toggled-content{
+    left: 190px;
+}
+
+/* Media */ 
+
+@media screen and (max-width: 568px) {
+    .--hamburger-toggled-content{
+        left: 0;
+    }
+}
