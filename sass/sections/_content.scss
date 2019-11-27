@@ -4,13 +4,16 @@
     position: absolute;
     top: 60px;
     left: 0;
-    width: calc(100% - 190px);
+    width: 100%;
     transition: $transition-side-nav;
-    padding: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .--hamburger-toggled-content{
     left: 190px;
+    width: calc(100% - 190px);
 }
 
 /* Media */ 

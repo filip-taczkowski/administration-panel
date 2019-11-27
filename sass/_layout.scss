@@ -14,12 +14,13 @@ nav {
     z-index: 100;
 }
 
-.nav--top {
-    height: 60px;
-    width: 100%;
-    left: 190px;
-    background-color: #FFF
+.container {
+    width: 98%;
+    height: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
 }
+
 
 /* Media */ 
 @media screen and (max-width: 568px) {

@@ -108,9 +108,11 @@ ul {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
+        transition: $transition-hover;
+        
         &:hover {
             background-color: $color-nav-hover;
+            border-left: 4px solid $color-nav-hover-border;
         }
 
         img {

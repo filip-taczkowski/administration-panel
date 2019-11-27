@@ -2,7 +2,10 @@
 $color-side-panel-background: #191919;
 $color-content-background: #F2F2F2;
 $color-nav-hover: #282828;
+$color-nav-hover-border: #f58220;
 $color-nav-font: #818181;
+$color-nav-border: #e3e3e3;
+$color-nav-profile: #56819f;
 
 /* Font Colors */
 
@@ -14,3 +17,4 @@ $font-family-roboto: 'Roboto', sans-serif;
 
 /* Transitions */
 $transition-side-nav: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+$transition-hover: all 0.5s ease-in-out;

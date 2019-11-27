@@ -1,0 +1,50 @@
+/* General */ 
+.nav--top {
+    height: 60px;
+    width: calc(100% - 190px);
+    left: 190px;
+    background-color: #FFF;
+    border-bottom: 1px solid $color-nav-border;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        width: 20px;
+        height: 20px;
+        filter: invert(0.5);
+    }
+}
+
+.nav--top__container {
+    @include nav-side-border;
+    display: flex;
+    color: $color-nav-font;
+    align-items: center;
+    padding: 20px 15px;  
+}
+
+/* Wallet */ 
+
+.nav--top__wallet {
+    img{
+        padding: 0 10px;
+    }
+}
+
+/* Notification */
+
+
+/* Profile */
+
+.nav--top__profile {
+    font-size: 13px;
+    color: $color-nav-profile;
+
+    img {
+        padding-right: 10px;
+    }
+}
+
+
+
+

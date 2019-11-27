@@ -357,10 +357,10 @@ nav {
   z-index: 100;
 }
 
-.nav--top {
-  height: 60px;
-  width: 100%;
-  left: 190px;
+.container {
+  width: 98%;
+  height: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #FFF;
 }
 
@@ -488,10 +488,12 @@ ul a {
       align-items: center;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  transition: all 0.5s ease-in-out;
 }
 
 ul a:hover {
   background-color: #282828;
+  border-left: 4px solid #f58220;
 }
 
 ul a img {
@@ -527,13 +529,18 @@ ul a p {
   position: absolute;
   top: 60px;
   left: 0;
-  width: calc(100% - 190px);
+  width: 100%;
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  padding: 20px;
+  padding: 20px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .--hamburger-toggled-content {
   left: 190px;
+  width: calc(100% - 190px);
 }
 
 /* Media */
@@ -541,6 +548,51 @@ ul a p {
   .--hamburger-toggled-content {
     left: 0;
   }
+}
+
+/* General */
+.nav--top {
+  height: 60px;
+  width: calc(100% - 190px);
+  left: 190px;
+  background-color: #FFF;
+  border-bottom: 1px solid #e3e3e3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.nav--top img {
+  width: 20px;
+  height: 20px;
+  filter: invert(0.5);
+}
+
+.nav--top__container {
+  border-left: 1px solid #e3e3e3;
+  display: -ms-flexbox;
+  display: flex;
+  color: #818181;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px 15px;
+}
+
+/* Wallet */
+.nav--top__wallet img {
+  padding: 0 10px;
+}
+
+/* Notification */
+/* Profile */
+.nav--top__profile {
+  font-size: 13px;
+  color: #56819f;
+}
+
+.nav--top__profile img {
+  padding-right: 10px;
 }
 
 /* Pages / Views */
