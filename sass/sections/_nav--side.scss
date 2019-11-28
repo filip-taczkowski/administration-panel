@@ -5,20 +5,18 @@
     margin: 0;
     overflow: hidden;
     transition: $transition-side-nav;
-
-    img {
-        margin: 10px;
-    }
-
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar{
-        display: none;
-    }
+    color: $color-nav-font-side;
+    font-size: 16px;
 }
 
 .--hamburger-toggled {
     height: 100%;
+    overflow-y: scroll;
+
+    
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 /* Header */ 
@@ -48,7 +46,7 @@
             margin-bottom: 4px;
             width: 25px;
             height: 3px;
-            background-color: #FFF;
+            background-color: $color-default-background;
             border-radius: 3px;
 
             transform-origin: 4px 0px;
@@ -94,33 +92,29 @@
 }
 
 
-/* List */ 
+/* Column */
+
+.nav--side__column {
+    display: flex;
+    flex-direction: column;
+}
 
 ul {
     list-style-type: none;
     width: 100%;
     padding: 0 0 50px;
-    border-bottom: 1px $color-nav-font solid;
+    border-bottom: 1px $color-nav-font-side solid;
 
     a {
         text-decoration: none;
-        color: $color-nav-font;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         transition: $transition-hover;
-        
-        &:hover {
-            background-color: $color-nav-hover;
-            border-left: 4px solid $color-nav-hover-border;
-        }
+        color: $color-nav-font-side;
 
-        img {
-
-            width: 17px;
-            height: 17px;
-           // background-color: $color-nav-font;
-            filter: invert(0.5);
+        i {
+            padding: 0 10px;
         }
 
         p {
@@ -128,9 +122,46 @@ ul {
             margin: 15px 5px;
         }
 
+        &:hover {
+            background-color: $color-nav-hover;
+            border-left: 4px solid $color-nav-hover-border;
+        }
     }
 
 }
+
+.nav--side__management{
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: -0.28px;
+        font-size: 16px;
+    }
+
+    .manager__tile{
+        display: flex;
+        align-items: center;
+        color: $color-nav-profile;
+        img {
+            padding-right: 15px;
+        }
+    }
+}
+
+.nav--top--media {
+    display: none;
+    background-color: $color-default-background;
+    .nav--top__container{
+        justify-content: center;
+        border: none;
+    }
+}
+
+
+
+/* Media */
 
 @media screen and (max-width: 568px) {
     .nav--side {
@@ -151,5 +182,19 @@ ul {
         a {
             justify-content: center;
         }
+    }
+
+    .nav--side__management {
+        h3 {
+            text-align: center;
+        }
+
+        .manager__tile{
+            justify-content: center;
+        }
+    }
+
+    .nav--top--media {
+        display: block;
     }
 }

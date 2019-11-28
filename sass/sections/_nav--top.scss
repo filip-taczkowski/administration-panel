@@ -3,44 +3,43 @@
     height: 60px;
     width: calc(100% - 190px);
     left: 190px;
-    background-color: #FFF;
+    background-color: $color-default-background;
     border-bottom: 1px solid $color-nav-border;
     display: flex;
     justify-content: flex-end;
 
-    img {
-        width: 20px;
-        height: 20px;
-        filter: invert(0.5);
+    i {
+        font-size: 18px;
     }
 }
 
 .nav--top__container {
     @include nav-side-border;
     display: flex;
-    color: $color-nav-font;
+    color: $color-nav-font-top;
     align-items: center;
     padding: 20px 15px;  
 }
 
+
 /* Wallet */ 
 
 .nav--top__wallet {
-    img{
-        padding: 0 10px;
+    i {
+        padding: 0 15px;
     }
 }
-
-/* Notification */
 
 
 /* Profile */
 
 .nav--top__profile {
-    font-size: 13px;
-    color: $color-nav-profile;
+    p{
+        font-size: 13px;
+        color: $color-nav-profile;
+    }
 
-    img {
+    i {
         padding-right: 10px;
     }
 }
