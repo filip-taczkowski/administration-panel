@@ -5,11 +5,13 @@
 @import 'layout';
 
 /* Components */
+@import 'components/content__header';
 
 /* Sections */
 @import 'sections/nav--side';
 @import 'sections/content';
-@import 'sections/nav--top'
+@import 'sections/nav--top';
 
 
-/* Pages / Views */
+/* Pages - Views */
+@import 'pages/general';

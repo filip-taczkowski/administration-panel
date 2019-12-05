@@ -21,15 +21,26 @@ nav {
     background-color: $color-default-background;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $color-nav-border;
+    justify-content: center;
+}
+
+.col {
+    width: 670px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 /* Media */ 
 @media screen and (max-width: 568px) {
     .nav--top {
         display: none;
     }
-
-    .content {
-        width: 100%;
-    }
-    
+   
 }
+

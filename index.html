@@ -6,7 +6,7 @@
     <title>Addministration panel</title>
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="images/icon-font/css/Glyphter.css" rel="stylesheet">
+    <link href="vendor/icon-font/css/Glyphter.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -44,7 +44,7 @@
                 <a href="#"><i class="icon-links"></i><p>Links</p></li></a>
                 <a href="#"><i class="icon-banners"></i><p>Banners</p></li></a>
                 <a href="#"><i class="icon-personaldata"></i><p>Personal Data</p></li></a>
-                <a href="#"><i class="icon-payout"></i><p>payout</p></li></a>
+                <a href="#"><i class="icon-payout"></i><p>Payout</p></li></a>
                 <a href="#"><i class="icon-postback"></i><p>Postback</p></a>
             </ul>      
             <div class="nav--side__management">
@@ -75,10 +75,39 @@
     </nav>
 
     <section class="content">
-        <div class="container">
-            
+        <div class="container general">
+            <div class="content__header row">
+                <span>general statistics</span>
+            </div>
+            <div class="date row">
+                <input type="date">
+                <input type="date">
+                <button type="button"><i class="icon-refresh"></i></button>
+            </div>
+            <div class="statistics row">
+                <div class="col">
+                    <div class="statistics__tile">
+                        <span class="statistics__name">Visit Signups</span><span class="statistics__value">124</span>
+                    </div>
+                    <div class="statistics__tile">
+                        <span class="statistics__name">Net deposit</span><span class="statistics__value">502</span>
+                    </div>
+                    <div class="statistics__tile">
+                        <span class="statistics__name">FTD</span><span class="statistics__value">668</span>
+                    </div>
+                    <div class="statistics__tile">
+                        <span class="statistics__name">Turn over</span><span class="statistics__value">324</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chart row">
+                <div class="col">
+                <span class="chart__title">Earnings chart</span>
+                <img src="images/chart.svg" alt="chart">
+                </div>
+            </div>
         </div>
     </section>   
-
+    
     <script src="js/script.js"></script>
 </body>
