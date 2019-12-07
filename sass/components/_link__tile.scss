@@ -1,0 +1,16 @@
+.link__tile {
+    @include border-bottom-gray;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+    .link__icons {
+        border: none;
+    }
+
+    a {
+        width: 300px;
+    }
+}

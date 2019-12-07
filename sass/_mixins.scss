@@ -2,3 +2,6 @@
     border-left: 1px solid $color-nav-border;
 }
 
+@mixin border-bottom-gray {
+    border-bottom: 2px solid $color-nav-border;
+}

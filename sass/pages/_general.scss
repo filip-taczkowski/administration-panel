@@ -5,12 +5,6 @@
     button {
         width: 40px;
         height: 40px;
-        font-size: 13px;
-        color: $color-default-background;
-        background-color: $color-accent;
-        border: none;
-        margin-left: 10px;
-        border-radius: 3px;
     }
 }
 
@@ -24,7 +18,7 @@
         width: 310px;
         margin: 10px;
         padding: 5px 1px;
-        border-bottom: 2px solid $color-nav-border;
+        @include border-bottom-gray;
         display: flex;
         justify-content: space-between;
 

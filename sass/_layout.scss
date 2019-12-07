@@ -7,7 +7,10 @@ body {
     font-family: $font-family-roboto;
     background-color: $color-content-background;
     position: relative;
- }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 nav {
     position: fixed;
@@ -16,9 +19,10 @@ nav {
 
 .container {
     width: 98%;
-    height: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: $color-default-background;
+    margin: 20px 5px;
+    padding-bottom: 40px;
 }
 
 .row {
@@ -42,5 +46,12 @@ nav {
         display: none;
     }
    
+    .container {
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
 }
 

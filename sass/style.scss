@@ -6,6 +6,8 @@
 
 /* Components */
 @import 'components/content__header';
+@import 'components/button';
+@import 'components/link__tile';
 
 /* Sections */
 @import 'sections/nav--side';
@@ -15,3 +17,4 @@
 
 /* Pages - Views */
 @import 'pages/general';
+@import 'pages/links'

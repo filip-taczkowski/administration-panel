@@ -8,7 +8,9 @@
     transition: $transition-side-nav;
     padding: 15px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: $color-content-font;
 }
 
@@ -27,4 +29,5 @@
     .content {
         width: 100%;
     }
+
 }
