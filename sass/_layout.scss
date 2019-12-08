@@ -9,7 +9,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    font-size: $font-size-main;
 }
 
 nav {
@@ -36,6 +36,7 @@ nav {
     width: 670px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 

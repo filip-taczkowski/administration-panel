@@ -354,7 +354,7 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 100%;
+  font-size: 16px;
 }
 
 nav {
@@ -386,6 +386,8 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 /* Media */
@@ -419,24 +421,70 @@ button {
   border: none;
   margin-left: 10px;
   border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #F2F2F2;
+  color: #f58220;
+  border: 2px solid #f58220;
 }
 
 .link__tile {
   border-bottom: 2px solid #e3e3e3;
-  width: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link__tile span {
+  font-weight: 700;
+  width: 30%;
 }
 
 .link__tile .link__icons {
   border: none;
+  width: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.link__tile .link__icons i {
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link__tile .link__icons i:hover {
+  color: #f58220;
 }
 
 .link__tile a {
-  width: 300px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.link__tile:hover {
+  background-color: #F2F2F2;
+}
+
+.link__tile:hover .link__icons {
+  opacity: 1;
+}
+
+@media screen and (max-width: 568px) {
+  .link__icons {
+    opacity: 1;
+  }
+}
+
+input[type="date"] {
+  margin: 5px 10px;
 }
 
 /* Sections */
@@ -666,7 +714,7 @@ ul a:hover {
     left: 0;
   }
   .content {
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -752,6 +800,7 @@ ul a:hover {
 /* Chart */
 .chart {
   border: none;
+  overflow-x: scroll;
 }
 
 .chart .col {
@@ -782,6 +831,9 @@ ul a:hover {
 .links button {
   width: 125px;
   height: 40px;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 100;
 }
 
 .links .col {
@@ -789,5 +841,12 @@ ul a:hover {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+}
+
+.links__container {
+  margin: 30px 0;
+  padding: 0;
+  width: 100%;
+  border-top: 2px solid #e3e3e3;
 }
 /*# sourceMappingURL=style.css.map */

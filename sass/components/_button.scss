@@ -5,4 +5,12 @@ button {
     border: none;
     margin-left: 10px;
     border-radius: 3px;
+    transition: $transition-hover;
+    text-align: center;
+
+    &:hover {
+        background-color: $color-content-background;
+        color: $color-accent;
+        border: 2px solid $color-accent;
+    }
 }

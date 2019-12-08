@@ -1,16 +1,48 @@
 .link__tile {
     @include border-bottom-gray;
 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+    display: flex;    
+    padding: 15px 25px;
+    transition: $transition-hover;
     
+    span{
+        font-weight: 700;
+        width: 30%;
+    }
+
     .link__icons {
         border: none;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        transition: $transition-hover;
+
+        i {
+            margin: 0 10px;
+            transition: $transition-hover;
+            
+            &:hover {
+                color: $color-accent;
+            }
+        }
     }
 
     a {
-        width: 300px;
+        flex-grow: 1;
+    }
+
+    &:hover {
+        background-color: $color-content-background;
+
+        .link__icons{
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .link__icons{
+        opacity: 1;
     }
 }

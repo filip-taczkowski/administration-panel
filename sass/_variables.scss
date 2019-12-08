@@ -1,26 +1,26 @@
 /* Colors */
 $color-side-panel-background: #191919;
 $color-default-background: #FFF;
-$color-default-font: #333;
 
 $color-content-background: #F2F2F2;
-$color-content-font: #a6a6a6;
 
 $color-nav-hover: #282828;
 $color-nav-font-side: #818181;
 $color-nav-font-top: #9c9c9c;
 $color-nav-border: #e3e3e3;
-$color-nav-profile: #56819f;
 
 $color-accent: #f58220;
 
 /* Font Colors */
+$color-default-font: #333;
+$color-content-font: #a6a6a6;
+$color-nav-profile: #56819f;
 
 /* Font Families */
 $font-family-roboto: 'Roboto', sans-serif;
 
-
 /* Font Sizes */
+$font-size-main: 16px;
 
 /* Transitions */
 $transition-side-nav: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;

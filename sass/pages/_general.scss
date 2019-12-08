@@ -36,6 +36,7 @@
 /* Chart */ 
 .chart {
     border: none;
+    overflow-x: scroll;
     
     .col {
         display: flex;
@@ -51,7 +52,7 @@
 
     img{
         width: 650px;
-        height: 345px;
+        height: 345px;      
     }
 }
 
