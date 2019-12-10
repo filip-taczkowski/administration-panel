@@ -23,6 +23,7 @@ nav {
     background-color: $color-default-background;
     margin: 20px 5px;
     padding-bottom: 40px;
+    display: none;
 }
 
 .row {
@@ -37,6 +38,10 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.active {
+    display: block;
 }
 
 

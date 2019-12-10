@@ -368,6 +368,7 @@ nav {
   background-color: #FFF;
   margin: 20px 5px;
   padding-bottom: 40px;
+  display: none;
 }
 
 .row {
@@ -388,6 +389,10 @@ nav {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+.active {
+  display: block;
 }
 
 /* Media */
