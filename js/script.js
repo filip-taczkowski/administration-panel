@@ -21,21 +21,34 @@
     const navLinks = document.querySelectorAll('.nav__link');
     const sections = document.querySelectorAll('.container');
 
+    function showActiveLink(activeLink) {
+        for (let navLink of navLinks ){
+            if (navLink.getAttribute('href') != activeLink.getAttribute('href')) {
+                navLink.classList.remove('nav__link--active');
+            } else {
+                navLink.classList.add('nav__link--active');
+            }
+        }
+    }
+
     function showSection() {
         for (let navLink of navLinks) {
             navLink.addEventListener('click', () => {
-                const sectionToActivate = navLink.getAttribute('href').replace('#', '');
-                console.log(sectionToActivate);
+                const sectionToActivate = navLink.getAttribute('href').replace('#', '');                
                 
                 for (let section of sections) {
                     const sectionId = section.getAttribute('id');
                     if (sectionId == sectionToActivate) {
-                        section.classList.add('active');
+                        section.classList.add('active');                       
                     } else {
-                        section.classList.remove('active');
+                        section.classList.remove('active');                        
                     }
                 }
+
+                showActiveLink(navLink);
             })
+
+
         }
     }
 

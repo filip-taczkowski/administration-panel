@@ -5,3 +5,8 @@
 @mixin border-bottom-gray {
     border-bottom: 2px solid $color-nav-border;
 }
+
+@mixin active-link {
+    background-color: $color-nav-hover;
+    border-left: 4px solid $color-accent;
+}

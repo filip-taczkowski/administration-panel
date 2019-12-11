@@ -104,30 +104,6 @@ ul {
     width: 100%;
     padding: 0 0 50px;
     border-bottom: 1px $color-nav-font-side solid;
-
-    a {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        transition: $transition-hover;
-        color: $color-nav-font-side;
-
-        i {
-            padding: 0 10px;
-        }
-
-        p {
-            text-align: center;
-            margin: 15px 5px;
-        }
-
-        &:hover {
-            background-color: $color-nav-hover;
-            border-left: 4px solid $color-accent;
-        }
-    }
-
 }
 
 .nav--side__management{
