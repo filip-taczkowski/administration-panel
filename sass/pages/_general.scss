@@ -54,5 +54,9 @@
         width: 650px;
         height: 345px;      
     }
+
+    &::webkit-scrollbar{
+        display: none;
+    }
 }
 

@@ -34,6 +34,8 @@
 /* Profile */
 
 .nav--top__profile {
+    transition: $transition-hover;
+    
     p{
         font-size: 13px;
         color: $color-nav-profile;
@@ -42,8 +44,19 @@
     i {
         padding-right: 10px;
     }
+
+    &:hover {
+        @include hover-tile;
+    }
 }
 
+/* Logout */ 
 
+.nav--top__logout {
+    transition: $transition-hover;
 
+    &:hover {
+        @include hover-tile;
+    }
+}
 

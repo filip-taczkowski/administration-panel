@@ -1,0 +1,23 @@
+.modal__login {
+    @include modal;
+    width: 700px;
+    max-width: 1000px;
+
+    .login__form {
+        padding: 50px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 150px;
+            margin: 0 5px;
+            border-color: $color-nav-border;
+        }
+
+        button {
+            width: 150px;
+            height: 38px;
+        }
+    }
+}

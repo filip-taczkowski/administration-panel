@@ -120,8 +120,14 @@ ul {
         display: flex;
         align-items: center;
         color: $color-nav-profile;
+        transition: $transition-hover;
+
         img {
             padding-right: 15px;
+        }
+
+        &:hover {
+            @include hover-tile;
         }
     }
 }

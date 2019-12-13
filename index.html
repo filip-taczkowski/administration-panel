@@ -40,9 +40,9 @@
         </div>
         <div class="nav--side__column">
             <ul>
+                <a href="#general" class="nav__link"><i class="icon-general"></i><p>General</p></li></a>
                 <a href="#details" class="nav__link"><i class="icon-details"></i><p>Details</p></li></a>
                 <a href="#links" class="nav__link"><i class="icon-links"></i><p>Links</p></li></a>
-                <a href="#general" class="nav__link"><i class="icon-general"></i><p>General</p></li></a>
                 <a href="#banners" class="nav__link"><i class="icon-banners"></i><p>Banners</p></li></a>
                 <a href="#personal-data" class="nav__link"><i class="icon-personaldata"></i><p>Personal Data</p></li></a>
                 <a href="#payout" class="nav__link"><i class="icon-payout"></i><p>Payout</p></li></a>
@@ -51,8 +51,8 @@
             <div class="nav--side__management">
                 <h3>Your Manager</h3>
                 <div class="manager__tile">
-                        <img src="images/manager.svg" alt="manager">
-                        <span>Mikhael E.</span>
+                    <img src="images/manager.svg" alt="manager">
+                    <span>Mikhael E.</span>
                 </div>
             </div>
             <div class="nav--top--media">
@@ -211,7 +211,98 @@
 
             </div>
         </section>
+
+        <section class="container banners" id="banners">
+            <div class="content__header row">
+                <span>banners</span>
+            </div>
+            <div class="details row">
+
+            </div>
+        </section>
+
+        <section class="container personal-data" id="personal-data">
+            <div class="content__header row">
+                <span>personal data</span>
+            </div>
+            <div class="details row">
+
+            </div>
+        </section>
+
+        <section class="container payout" id="payout">
+            <div class="content__header row">
+                <span>payout</span>
+            </div>
+            <div class="details row">
+
+            </div>
+        </section>
+
+        <section class="container postback" id="postback">
+            <div class="content__header row">
+                <span>postback</span>
+            </div>
+            <div class="details row">
+
+            </div>
+        </section>
+
     </div>   
+
+
+    <div class="overlay" id="overlay">
+        <div class="modal modal__logout" id="logoutModal">
+            <div class="btn-close js--close-modal">x</div>        
+            <div class="modal__title">
+                <h4>Do You really want to Quit?</h4>
+            </div>
+            <div class="modal__buttons">
+                <button class="js--close-modal">Cancel</button>
+                <button class="js--close-modal">Quit</button>
+            </div>        
+        </div>
+
+        <div class="modal modal__login" id="loginModal">
+            <div class="btn-close js--close-modal">x</div>        
+            <div class="modal__title">
+                <h4>LOGIN</h4>
+            </div>
+            <form class="login__form">
+                <div class="input--icon">
+                    <i class="icon-login"></i>
+                    <input type="text" name="user-name" placeholder="login name">
+                </div>
+                <div class="input--icon">
+                    <i class="icon-password"></i>
+                    <input type="password" name="user-password" placeholder="password">
+                </div>
+                <button class="js--close-modal">Enter</button>
+            </form>        
+        </div>
+
+        <div class="modal modal__message" id="messageModal">
+            <div class="btn-close js--close-modal">x</div>        
+            <div class="modal__title">
+                <h4>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
+            </div>
+            <div class="manager__information">
+                <img src="images/manager.svg" alt="manager">
+                <span>Mikhael E.</span>
+            </div>
+            <div class="modal__chat">
+
+            </div>
+            <form class="modal__input">
+                <div class="input__message">
+                    <i class="icon-message"></i>
+                    <input type="text" name="chat-message" placeholder="Enter the message">
+                </div>
+                <button type="submit">Send</button>
+            </form>        
+        </div>
+    </div>
+
     
     <script src="js/script.js"></script>
 </body>

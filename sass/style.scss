@@ -10,11 +10,16 @@
 @import 'components/link__tile';
 @import 'components/input__date';
 @import 'components/nav__link';
+@import 'components/modal__logout';
+@import 'components/modal__login';
+@import 'components/input--icon';
+@import 'components/modal__message';
 
 /* Sections */
 @import 'sections/nav--side';
 @import 'sections/content';
 @import 'sections/nav--top';
+@import 'sections/overlay';
 
 
 /* Pages - Views */

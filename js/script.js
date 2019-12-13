@@ -64,6 +64,60 @@
         
     }
 
+    /* Modals */
+
+    const logoutModal = document.querySelector('.modal__logout');
+    const loginModal = document.querySelector('.modal__login');
+    const messageModal = document.querySelector('.modal__message');
+
+    function closeModal() {
+        document.getElementById('overlay').classList.remove('show')
+    }
+
+    document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+        btn.addEventListener('click', function(e){
+            e.preventDefault();
+            closeModal();
+        })
+    })
+
+    document.querySelector('#overlay').addEventListener('click', function(e) {
+        if(e.target === this) {
+            closeModal();
+        }
+    })
+
+    document.addEventListener('keyup', function(e) {
+        if(e.keyCode === 27) {
+            closeModal();
+        }
+    })
+
+    function openModal(modal){
+        document.querySelectorAll('#overlay > *').forEach(function(modal) {
+            modal.classList.remove('show');
+        })
+        document.querySelector('#overlay').classList.add('show')
+        modal.classList.add('show')
+    }
+
+    const logoutIcon = document.querySelector('.nav--top__logout')
+    logoutIcon.addEventListener('click', () => {
+        openModal(logoutModal);
+    })
+
+    const loginIcon = document.querySelector('.nav--top__profile')
+    loginIcon.addEventListener('click', () => {
+        openModal(loginModal);
+    })
+
+    const messageIcon = document.querySelector('.manager__tile')
+    messageIcon.addEventListener('click', () => {
+        openModal(messageModal);
+        console.log(messageModal);
+    })
+
+
     initSideNav();
     showSection();
 }

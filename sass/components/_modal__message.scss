@@ -1,0 +1,55 @@
+.modal__message {
+    @include modal;
+    width: 600px;
+    height: 300px;
+
+    .manager__information {
+        @include border-bottom-gray;
+        display: flex;
+
+        img{
+            padding: 5px;
+        }
+
+        span{
+            padding: 5px;
+            font-weight: 700;
+            font-size: 20px
+        }
+    }
+
+    .modal__chat{
+        height: 150px;
+        @include border-bottom-gray;
+    }
+
+    .modal__input {
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+
+        button {
+            width: 80px;
+            height: 40px;
+        }
+    }
+}
+
+.input__message {
+    display: flex;
+    align-items: center;
+    border: 1px solid $color-nav-border;
+    padding: 5px;
+    color: $color-content-font;
+
+    input {
+        @include input;
+        width: 450px;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}

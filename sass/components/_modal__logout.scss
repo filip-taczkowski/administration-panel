@@ -1,0 +1,28 @@
+.modal__logout {
+    @include modal;
+
+}
+
+
+.modal__buttons {
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    button {
+        padding: 10px;
+        border-radius: 0;
+        width: 100px;
+        height: 30px;
+        margin: 10px 5px;
+
+        &:first-of-type {
+            background-color: $color-nav-font-side;
+
+            &:hover {
+                color: $color-default-background;
+            }
+        }
+    }
+}
+
