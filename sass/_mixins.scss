@@ -49,6 +49,7 @@
     border: none;
         background-color: inherit;
         padding: 5px;
+        transition: $transition-hover;
 
         &:focus {
             outline: none !important;

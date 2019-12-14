@@ -1,0 +1,45 @@
+.personal__data {
+    padding-bottom: 0;
+}
+
+.form__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+
+    label {
+        width: 400px;
+        padding: 10px;
+        font-weight: 700;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+            @include input;
+            border: 1px solid $color-nav-border;
+            width: 50%;
+        }
+
+        @media screen and (max-width: 568px) {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+    button {
+        width: 90px;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    &:last-child {
+        border: none
+    }
+
+}

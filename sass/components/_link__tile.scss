@@ -44,6 +44,17 @@
 
 @media screen and (max-width: 568px) {
     .link__icons{
-        opacity: 1;
+        opacity: 1 !important;
+        padding-top: 10px;
+    }
+
+    .link__tile {
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
