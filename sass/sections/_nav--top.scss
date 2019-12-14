@@ -35,6 +35,7 @@
 
 .nav--top__profile {
     transition: $transition-hover;
+    cursor: pointer;
     
     p{
         font-size: 13px;
@@ -54,6 +55,7 @@
 
 .nav--top__logout {
     transition: $transition-hover;
+    cursor: pointer;
 
     &:hover {
         @include hover-tile;

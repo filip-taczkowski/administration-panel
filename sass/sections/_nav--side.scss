@@ -121,6 +121,9 @@ ul {
         align-items: center;
         color: $color-nav-profile;
         transition: $transition-hover;
+        padding: 2px;
+        border-radius: 4px;
+        cursor: pointer;
 
         img {
             padding-right: 15px;
