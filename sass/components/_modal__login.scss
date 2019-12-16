@@ -21,3 +21,17 @@
         }
     }
 }
+
+@media screen and (max-width: 568px) {
+    .modal__login  {
+        width: 100%;
+
+        .login__form {
+            flex-direction: column;
+
+            .input--icon {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

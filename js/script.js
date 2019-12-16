@@ -101,15 +101,21 @@
         modal.classList.add('show')
     }
 
-    const logoutIcon = document.querySelector('.nav--top__logout')
-    logoutIcon.addEventListener('click', () => {
-        openModal(logoutModal);
-    })
+    const logoutIcons = document.querySelectorAll('.nav--top__logout')
+    for (let logoutIcon of logoutIcons) {
+        logoutIcon.addEventListener('click', () => {
+            openModal(logoutModal);
+            console.log(logoutModal);
+        })
+    }
 
-    const loginIcon = document.querySelector('.nav--top__profile')
-    loginIcon.addEventListener('click', () => {
-        openModal(loginModal);
-    })
+    const loginIcons = document.querySelectorAll('.nav--top__profile')
+    for(let loginIcon of loginIcons) {
+        loginIcon.addEventListener('click', () => {
+            openModal(loginModal);
+            console.log(loginModal);
+        })
+    }
 
     const messageIcon = document.querySelector('.manager__tile')
     messageIcon.addEventListener('click', () => {

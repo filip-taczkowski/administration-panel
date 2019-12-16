@@ -644,6 +644,19 @@ input[type="date"] {
   height: 38px;
 }
 
+@media screen and (max-width: 568px) {
+  .modal__login {
+    width: 100%;
+  }
+  .modal__login .login__form {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .modal__login .login__form .input--icon {
+    margin-bottom: 15px;
+  }
+}
+
 .input--icon {
   border: 1px solid #e3e3e3;
   display: -ms-flexbox;
@@ -768,6 +781,22 @@ input[type="date"] {
 
 .input__message i {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 568px) {
+  .modal__message {
+    width: 95%;
+  }
+  .modal__message .input__message {
+    width: 65%;
+  }
+  .modal__message .input__message .input {
+    width: 100%;
+  }
+  .modal__message .modal__input {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 /* Sections */
@@ -1130,7 +1159,7 @@ ul {
   height: 345px;
 }
 
-.chart::webkit-scrollbar {
+.chart::-webkit-scrollbar {
   display: none;
 }
 

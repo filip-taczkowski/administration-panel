@@ -53,3 +53,21 @@
         margin-right: 5px;
     }
 }
+
+@media screen and (max-width: 568px) {
+    .modal__message {
+        width: 95%;
+
+        .input__message {
+            width: 65%;
+
+            .input {
+                width: 100%;
+            }
+        }
+
+        .modal__input {
+            flex-wrap: wrap;
+        }
+    }
+}
