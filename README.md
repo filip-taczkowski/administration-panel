@@ -1,0 +1,1 @@
+https://filip-taczkowski.github.io/administration-panel/
